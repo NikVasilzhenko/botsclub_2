@@ -1,0 +1,45 @@
+.mob-collection{
+  &__item{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(38, 38, 38, .25);
+    &:last-child{margin-bottom: 0;}
+    &:nth-child(even){flex-direction: row-reverse;}
+  }
+  &__pic{
+    width: 50%;
+    border-radius: 16px;
+    background: center center no-repeat;
+    background-size: cover;
+    &_no-pic{
+      background: url(../img/svg/octopus-flag.svg) center center no-repeat, linear-gradient(180deg, #1BD7FF 61.63%, #24B9FF 193.02%);
+      background-size: 55px auto;
+    }
+  }
+  &__main{
+    width: 50%;
+    padding: 8px 16px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  &__content{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  &__title{
+    font-size: 14px;
+    line-height: 20px;
+    color: #262626;
+  }
+  &__txt{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: #262626;    
+  }
+}

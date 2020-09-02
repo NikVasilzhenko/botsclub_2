@@ -1,0 +1,46 @@
+.btn-burger{
+  display: none;
+  @media only screen and (max-width : 991px){
+    display: block;
+    width: 14px;
+    height: 14px;
+    position: relative;
+    background-color: #262626;
+    span,
+    &:before,
+    &:after{
+      content: '';
+      display: block;
+      width: 14px;
+      height: 2px;
+      background-color: #fff;
+      border-radius: 1px;
+      position: absolute;
+      left: 0;
+      transition: .25s;
+    }
+    span{
+      top: 50%;
+      margin-top: -1px;      
+    }
+    &:before{top: 0;}
+    &:after{bottom: 0;}
+    &.open{
+      span{display: none;}
+      &:before,&:after{
+        width: 18px;
+        left: -2px;
+      }
+      &:before{        
+        top: 50%;
+        margin-top: -1px;
+        transform: rotate(-45deg);        
+      }
+      &:after{
+        bottom: 50%;
+        margin-bottom: -1px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

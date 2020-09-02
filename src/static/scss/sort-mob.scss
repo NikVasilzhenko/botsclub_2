@@ -1,0 +1,65 @@
+.sort-mob{
+  display: none;
+  @media only screen and (max-width : 991px){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    position: relative;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #E0E0E0;
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    font-size: 14px;
+    line-height: 16px;    
+    &__counter{
+      position: absolute;
+      right: 16px;
+      top: 84px;
+      padding: 8px 12px;
+      white-space: nowrap;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      color: #828282;
+      border: 1px solid #828282;
+      border-radius: 8px;
+    }
+    &__row{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    &__title{
+      color: #828282;
+      margin-right: 8px;
+    }
+    &__alpha{
+      color: #262626;
+      padding-right: 20px;
+      position: relative;
+      &::after{
+        content: '';
+        display: block;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -6px;
+        background: url(../img/svg/chevron-bottom-black.svg) center center no-repeat;
+        background-size: contain;
+      }
+      &.up{
+        &::after{transform: rotate(180deg);}
+      }
+    }
+    &__filter{
+      position: relative;
+      color: #262626;
+      padding-left: 24px;
+      background: url(../img/svg/filter.svg) 0 center no-repeat;
+    }
+  }
+}

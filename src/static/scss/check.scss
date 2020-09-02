@@ -1,0 +1,71 @@
+.check{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 12px;
+  width: 100%;
+  position: relative;
+  &__txt{    
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(38, 38, 38, .75);
+  }
+  &__numb{
+    padding: 3px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 8px;
+    color: rgba(38, 38, 38, .25);
+  }
+  &__dop{
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    border: 1.5px solid rgba(38, 38, 38, .25);
+    cursor: pointer;
+    &_radio{
+      border-radius: 50%;
+      box-shadow: 0 0 0 4px #fff inset;
+      background-color: #fff;
+    }
+    &_checkbox{
+      border-radius: 4px;
+      background-color: #fff;
+    }
+  }
+  &__raitnumb{
+    font-weight: 500;
+    margin-left: 8px;
+  }
+  &__star{
+    background: url(../img/svg/star.svg) no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-left: 2px;
+  }
+  input{
+    display: none;
+    &:checked{
+      & ~ .check__dop_radio{
+        background-color: #5C5C5C;
+        border-color: #5C5C5C;
+      }
+      & ~ .check__txt{
+        color: #262626;
+        font-weight: 500;
+      }
+      & ~ .check__numb{
+        color: rgba(38, 38, 38, .5);
+        border-color: #BDBDBD;
+      }
+      & ~ .check__dop_checkbox{
+        background: url(../img/svg/check.svg) 2px 4px no-repeat #fff;
+        border-color: #5C5C5C;
+      }
+    }
+  }
+  .rait{margin-left: 8px;}
+}

@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
+@font-face {
+  font-family: 'Stolzl';
+  src: local('Stolzl Regular'), local('Stolzl-Regular'),
+      url('../fonts/Stolzl-Regular.woff2') format('woff2'),
+      url('../fonts/Stolzl-Regular.woff') format('woff'),
+      url('../fonts/Stolzl-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}

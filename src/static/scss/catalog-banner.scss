@@ -1,0 +1,12 @@
+.catalog-banner{
+  border-radius: 4px;
+  overflow: hidden;
+  height: 256px;
+  background: center center no-repeat;
+  @media only screen and (max-width : 767px){
+    height: 100px;
+    border-radius: 16px;
+  }
+}
+
+

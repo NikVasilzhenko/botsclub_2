@@ -1,0 +1,16 @@
+.catalog-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc((100% - 64px) / 3), 1fr));
+  grid-column-gap: 32px;
+  grid-row-gap: 40px;
+  &__blc{
+    grid-column: span 3;
+  }
+  @media only screen and (max-width : 767px){
+    grid-template-columns: repeat(auto-fill, minmax(calc((100% - 64px) / 3), 1fr));
+    grid-row-gap: 28px;
+    &__blc{
+      grid-column: span 3;
+    }
+  }
+}

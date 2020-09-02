@@ -1,0 +1,17 @@
+.main-slider{
+  box-shadow: 0 4px 40px rgba(0, 0, 0, .25);
+  border-radius: 8px;
+  &__btn{
+    bottom: 36px;
+    &_next{right: 36px;}
+    &_prev{right: 96px;}
+  }
+  @media only screen and (max-width : 767px){
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0 16px;
+    &.swiper-container{overflow: visible;}
+  }
+}

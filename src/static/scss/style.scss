@@ -1,0 +1,37 @@
+@import "vendors.scss";
+
+//шрифты
+@import "fonts.scss";
+
+//переменный и миксины
+@import "_vars.scss";
+@import "_mix.scss";
+
+//базовые глобальные стили
+@import "basic.scss";
+
+//модули
+@import "header.scss";
+@import "burger.scss";
+@import "footer.scss";
+@import "index-page-header.scss";
+@import "index-nav.scss";
+@import "search-form.scss";
+@import "main-slider.scss";
+@import "main-slide.scss";
+@import "bot-item.scss";
+@import "main-bots.scss";
+@import "items-row.scss";
+@import "blur-row.scss";
+@import "rait.scss";
+@import "short-banner.scss";
+@import "catalog.scss";
+@import "filter.scss";
+@import "check.scss";
+@import "sort.scss";
+@import "sort-mob.scss";
+@import "catalog-list.scss";
+@import "catalog-banner.scss";
+@import "mob-collection.scss";
+@import "stories.scss";
+

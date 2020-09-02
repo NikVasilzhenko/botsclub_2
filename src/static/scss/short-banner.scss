@@ -1,0 +1,80 @@
+.short-banner{
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  background: #fff;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, .25);
+  border-radius: 4px;
+  overflow: hidden;
+  &__pic{
+    background: center center no-repeat;
+    background-size: cover;
+    width: 324px;
+    max-width: 50%;
+  }
+  &__main{
+    width: calc(100% - 324px);
+    min-width: 50%;
+    padding: 38px 48px 38px 32px;
+  }
+  &__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__content{
+    flex-grow: 1;
+    padding-right: 16px;
+    max-width: 384px;
+  }
+  &__title{
+    font-family: $font-second;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  &__txt{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(38, 38, 38, .5);
+  }
+  @media only screen and (max-width : 1199px){
+    &__row{display: block;}
+    &__txt{margin-bottom: 32px;}
+  }
+  @media only screen and (max-width : 767px){
+    box-shadow: 0 2px 8px rgba(38, 38, 38, .25);
+    border-radius: 16px;
+    position: relative;
+    &__pic{width: 120px;}
+    &__main{
+      width: calc(100% - 120px);
+      padding: 15px 16px;
+    }
+    &__content{padding-right: 0;}
+    &__title{
+      margin-bottom: 4px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &__txt{
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: #262626;
+      margin-bottom: 0;
+    }
+    &__btn{
+      background: none;
+      font-size: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }  
+}

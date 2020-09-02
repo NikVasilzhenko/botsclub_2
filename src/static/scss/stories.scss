@@ -1,0 +1,27 @@
+.stories{
+  padding: 16px 0;
+  &__slider{
+    overflow: visible;
+  }
+  &__slide{
+    width: 64px;
+    display: block;
+  }
+  &__pic{
+    width: 64px;
+    height: 64px;
+    border: 2px solid #7690C9;
+    border-radius: 50%;
+    margin-bottom: 8px;
+    box-shadow: 0 0 0 2px #fff inset;
+    background: center center no-repeat;
+    background-size: cover;
+  }
+  &__txt{
+    text-align: center;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: #262626;
+  }
+}
