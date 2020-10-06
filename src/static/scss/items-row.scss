@@ -4,11 +4,11 @@
   grid-column-gap: 12px;
   grid-row-gap: 12px;
   @media only screen and (max-width : 1116px){
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fill,minmax(calc((100% - 48px)/5),1fr));
     .bot-item:nth-child(6){display: none;}
   }
   @media only screen and (max-width : 932px){
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill,minmax(calc((100% - 36px)/4),1fr));
     .bot-item:nth-child(5){display: none;}
   }
   @media only screen and (max-width : 767px){

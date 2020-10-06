@@ -33,6 +33,10 @@
   &:last-of-type{border-right: none;}
   background-color: #f1f4fa;
   padding: 12px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: column;
   &__title{
     margin-bottom: 19px;
     font-weight: 500;
@@ -40,7 +44,10 @@
     line-height: 19px;
     color: #000;
   }
-  &__wrap{@include flex-stretch-between;}
+  &__wrap{
+    @include flex-stretch-between;
+    flex-grow: 1;
+  }
   &__pic{
     border: 4px solid #fff;
     border-radius: 4px;

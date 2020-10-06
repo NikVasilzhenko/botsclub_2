@@ -124,6 +124,9 @@ body{
     padding-right: 16px;
     &-emodji{display: none;}
   }
+  &__more{
+    .mob{display: none;}
+  }
   @media only screen and (max-width : 767px){
     margin-bottom: 48px;
     &:last-child{margin-bottom: 54px;}
@@ -140,10 +143,10 @@ body{
       position: relative;
       border-radius: 12px;
       border: none;
-      &::before{
-        content: 'Show all';
-        padding: 12px 42px 12px 24px;
+      .desc{display: none;}
+      .mob{
         display: block;
+        padding: 12px 42px 12px 24px;
         border-radius: 11px;
         background-color: #fff;
         color: #262626;
@@ -162,7 +165,6 @@ body{
         top: 16px;
         z-index: 3;
       }
-      span{display: none;}
     }
     &_dark-on-mob{
       padding: 32px 0;
