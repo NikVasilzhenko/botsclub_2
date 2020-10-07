@@ -1,8 +1,8 @@
 .rait{
   position: relative;
-  background: url(../img/svg/rait_overlay.svg) 0 center no-repeat;
-  background-size: auto 100% !important;
-  width: 88px;
+  background: url(../img/svg/star_overlay.svg) 0 center repeat-x;
+  background-size: 18px 100% !important;
+  width: 90px;
   height: 16px;
   &__top{
     position: absolute;
@@ -10,11 +10,12 @@
     left: 0;
     height: 100%;
     background: url(../img/svg/star.svg) 0 center repeat-x;
-    background-size: 17.5px 100% !important;
+    background-size: 18px 100% !important;
   }
   @media only screen and (max-width : 767px){
-    width: 68px;
+    width: 66px;
     height: 12px;
-    &__top{background-size: 13.5px 100% !important;}
+    background-size: 13px 100% !important;
+    &__top{background-size: 13px 100% !important;}
   }
 }
